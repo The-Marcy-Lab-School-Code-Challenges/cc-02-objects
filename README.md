@@ -2,38 +2,35 @@
 
 ## Instructions
 
-1. Clone down this assignment to your `code-challenges' directory in VScode.  
-2. Code your solution using JavaScript in `index.js`. 
-3. **Be sure to run and test your code throughly!**
+1. Clone down this assignment to your `code-challenges' directory.
+2. Code your solution using JavaScript in `index.js`.
+3. **Be sure to run and test your code thoroughly!**
 4. By the end of Code Challenge, **commit and push your changes up to Github**.
 5. Using the browser, verify that your solution is in your remote repo on Github.
 
 ## Code Problems
 
-### **Test your solutions for questions 1 and 2 with the following variable:** 
-```javascript
-const fellows = "marcy fellows"
-```
+1. Write a function named `stringLengths` that takes in an array of strings as an input, and returns an object, where the keys are all the strings in the array, and the value of each key represents the length of that string. 
+    
+    ```jsx
+    const instructors = ["Ben", "Motun", "Gonzolo", "Itzel"]
+    stringLengths(instructors) // { Ben: 3, Motun: 5, Gonzolo: 7, Itzel: 5 }
+    ```
+    
+2. Write a function named `stringCount` that takes in an array of strings and returns an object where the keys are the strings from the array and the value of each key is a count of how many times the string appears in the object. If there are duplicate strings the valuconst instructors = ["Ben", "Motun", "Gonzolo", "Itzel"]e should reflect that. 
+    
+    ```jsx
+    const words = ["apple", "orange", "peach", "pear", "apple"]
+    stringCount(words) // { apple: 2, orange: 1, peach: 1, pear: 1 }
+    
+    ```
+    
 
-1. Write a function named `charCount` that takes in a string and returns an object where the keys are letters in the string and the value of each key is a count of how many times the character appears in the string.
-    
-    ```javascript
-    const fellows = "marcy fellows"
-    charCount(fellows) // returns { "m": 1, "a": 1, "r": 1, "c": 1, "y": 1, " ": 1, "f": 1, "e": 1, "l": 2, "o": 1, "w": 1, "s": 1 }
-    ```
-    
-2. Write a function named `letterCount` that takes in a string and returns an object where the keys are letters in the string and the value of each key is a count of how many times the character appears in the string, not including empty spaces. 
-    
-    ```javascript
-    letterCount(fellows) // returns { "m": 1, "a": 1, "r": 1, "c": 1, "y": 1, "f": 1, "e": 1, "l": 2, "o": 1, "w": 1, "s": 1 }
-    ```
-    
 ### Bonus
-3. Write a function named `letterCountRefactor` that has the same input and output as `letterCount` except you cannot use a `for let i` loop. Consider using a [`for in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) or [`for of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of]) loop. 
 
-
-4. Write a function named `vowelCount` that takes in a string and returns an object where the keys are letters in the given string that are vowels and the value of each vowel key is a count of how many times the character appears in the string.
-
-    ```javascript
-    vowelCount(fellows) // returns {"a": 1, "o": 1, "e": 1}
+1. Write a function named `highestFrequencyString` that takes in an array of strings and returns the string with the highest frequency in the array and how many times it appears.
+    
+    ```jsx
+    const fruits = ["apple", "orange", "apple", "peach", "pear", "apple", "peach"]
+    highestFrequencyString(fruits) // "apple appears 3 times in the array."
     ```
