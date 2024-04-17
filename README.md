@@ -17,7 +17,7 @@
     stringLengths(instructors) // { Ben: 3, Motun: 5, Gonzolo: 7, Itzel: 5 }
     ```
     
-2. Write a function named `stringCount` that takes in an array of strings and returns an object where the keys are the strings from the array and the value of each key is a count of how many times the string appears in the object. If there are duplicate strings the valuconst instructors = ["Ben", "Motun", "Gonzolo", "Itzel"]e should reflect that. 
+2. Write a function named stringCount that takes in an array of strings and returns an object where the keys are the strings from the array and the value of each key is a count of how many times the string appears in the object. If there are duplicate strings the values should reflect that. 
     
     ```jsx
     const words = ["apple", "orange", "peach", "pear", "apple"]
